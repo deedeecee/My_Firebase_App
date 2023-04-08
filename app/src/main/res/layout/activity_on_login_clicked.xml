@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onLoginClicked"
+    android:background="@drawable/loginpagebg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/loginpagebackground"
+            android:alpha="0.3">
+
+            <ImageView
+                android:id="@+id/imageViewProfilePic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/round_person_outline_24"/>
+
+            <TextView
+                android:id="@+id/show_welcome_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewProfilePic"
+                android:hint="Loading..."
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#FFFFFF"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:alpha="0.70">
+
+            <!-- full name -->
+            <TextView
+                android:id="@+id/show_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="loading..."
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/show_full_name"
+                android:background="#5A5A5A"
+                tools:ignore="NotSibling" />
+
+            <!-- department -->
+            <TextView
+                android:id="@+id/show_department"
+                android:layout_below="@id/show_full_name"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="loading..."
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/show_department"
+                android:background="#5A5A5A"
+                tools:ignore="NotSibling" />
+
+            <!-- enrollment ID -->
+            <TextView
+                android:id="@+id/show_enrollment_ID"
+                android:layout_below="@id/show_department"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="loading..."
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/show_enrollment_ID"
+                android:background="#5A5A5A"
+                tools:ignore="NotSibling" />
+
+            <!-- email ID -->
+            <TextView
+                android:id="@+id/show_email_ID"
+                android:layout_below="@id/show_enrollment_ID"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="loading..."
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/show_email_ID"
+                android:background="#5A5A5A"
+                tools:ignore="NotSibling" />
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar_dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

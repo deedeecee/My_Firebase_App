@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".UpdateProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/black"
+        android:alpha="0.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_update_profile_head"
+            android:layout_marginTop="5dp"
+            android:text="Update your credentials carefully"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+<!--        first name-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_first_name"
+            android:layout_below="@id/textview_update_profile_head"
+            android:text="First Name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_first_name"
+            android:layout_below="@id/textview_first_name"
+            android:background="#555555"
+            android:inputType="textPersonName"
+            android:padding="6dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+<!--        last name-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_last_name"
+            android:layout_below="@id/edittext_first_name"
+            android:text="Last Name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_last_name"
+            android:layout_below="@id/textview_last_name"
+            android:background="#555555"
+            android:inputType="textPersonName"
+            android:padding="6dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+<!--        department-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_department"
+            android:layout_below="@id/edittext_last_name"
+            android:text="Department"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_department"
+            android:layout_below="@id/textview_department"
+            android:background="#555555"
+            android:inputType="textPersonName"
+            android:padding="6dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+<!--        Enrollment ID-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_enrollmentID"
+            android:layout_below="@id/edittext_department"
+            android:text="Enrolment ID"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_enrollment_ID"
+            android:layout_below="@id/textview_enrollmentID"
+            android:background="#555555"
+            android:inputType="textPersonName"
+            android:padding="6dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+<!--        Update Email-->
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_profile_email"
+            android:layout_below="@id/edittext_enrollment_ID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Update Email"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textAppearance="@style/Widget.Material3.Button.ElevatedButton"
+            android:backgroundTint="#5A5A5A"/>
+
+<!--        Update Password-->
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_profile_password"
+            android:layout_below="@id/update_profile_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Update Password"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textAppearance="@style/Widget.Material3.Button.ElevatedButton"
+            android:backgroundTint="#5A5A5A"/>
+
+<!--        Update Profile-->
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_profile"
+            android:layout_below="@id/update_profile_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Update Profile"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textAppearance="@style/Widget.Material3.Button.ElevatedButton"
+            android:backgroundTint="#5A5A5A"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

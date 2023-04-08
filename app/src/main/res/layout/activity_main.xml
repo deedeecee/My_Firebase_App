@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/myImage"
+        android:layout_width="102dp"
+        android:layout_height="108dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/baseline_class_24" />
+
+
+    <EditText
+        android:id="@+id/usernameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myImage"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="35dp"
+        android:background="#30000000"
+        android:drawableLeft="@drawable/round_person_24"
+        android:drawablePadding="10dp"
+        android:hint="Enrollment ID"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameLogin"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="35dp"
+        android:background="#30000000"
+        android:drawableLeft="@drawable/round_password_24"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordLogin"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="LOGIN"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_login"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/registerClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onRegisterClicked"
+            android:text="Register now!"
+            android:textColor="#00008B" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:elevation="10dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageViewShowHidePwd"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/usernameLogin"
+        android:layout_alignRight="@id/passwordLogin"
+        android:layout_marginTop="17.5dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/hidden" />
+
+</RelativeLayout>

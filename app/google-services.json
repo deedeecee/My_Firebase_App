@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "872513350438",
+    "project_id": "my-firebase-app-75f54",
+    "storage_bucket": "my-firebase-app-75f54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872513350438:android:98d0cade4ea60522d8afe7",
+        "android_client_info": {
+          "package_name": "com.ddcishosting.myfirebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872513350438-387sh680q9g2h1vg4qifhkppt6k5ms0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD63QrkE25Oa-tkbmovJD4DlTQg4gkKahQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872513350438-387sh680q9g2h1vg4qifhkppt6k5ms0k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
