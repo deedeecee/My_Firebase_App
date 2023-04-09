@@ -10,6 +10,9 @@ This file contains the code for the login screen of the app. When the app is ope
 ## onLoginClicked.java
 This file contains the code for the dashboard screen of the app. After logging in, the user will be directed to this screen which will display their name, department, enrollment ID, email ID, and a welcome message.
 
+## onRegisterClicked.java
+The class creates an activity for user registration and sets the layout for it. It retrieves user input for registration details and performs validation on them. If the input is valid, it registers the user using the Firebase Authentication API and updates the user's display name. It also saves the user's data to the Firebase Realtime Database. Finally, it shows a success message to the user and redirects them to the login activity. If there is any error during the registration process, it shows an error message to the user.
+
 ## Requirements
 Android Studio 4.1 or higher
 Android SDK 29 or higher
