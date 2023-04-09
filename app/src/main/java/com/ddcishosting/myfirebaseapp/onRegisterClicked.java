@@ -105,6 +105,7 @@ public class onRegisterClicked extends AppCompatActivity {
 
                     // update Display Name of User
                     UserProfileChangeRequest profileChangeRequest = new UserProfileChangeRequest.Builder().setDisplayName(fNameText + " " + lNameText).build();
+                    assert firebaseUser != null;
                     firebaseUser.updateProfile(profileChangeRequest);
 
                     // enter user data into Firebase Realtime Database

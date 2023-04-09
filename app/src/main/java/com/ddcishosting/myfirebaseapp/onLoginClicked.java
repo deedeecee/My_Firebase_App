@@ -112,10 +112,10 @@ public class onLoginClicked extends AppCompatActivity {
             Intent intent = new Intent(onLoginClicked.this, UpdateProfileActivity.class);
             startActivity(intent);
             finish();
-        }/* else if (id == R.id.menu_update_email) {
+        } else if (id == R.id.menu_update_email) {
             Intent intent = new Intent(onLoginClicked.this, UpdateEmailActivity.class);
             startActivity(intent);
-        } else if (id == R.id.menu_change_password) {
+        }/* else if (id == R.id.menu_change_password) {
             Intent intent = new Intent(onLoginClicked.this, ChangePasswordActivity.class);
             startActivity(intent);
         } else if (id == R.id.menu_delete_profile) {

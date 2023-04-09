@@ -163,7 +163,14 @@
             android:textAppearance="@style/Widget.Material3.Button.ElevatedButton"
             android:backgroundTint="#5A5A5A"/>
 
-
+        <ProgressBar
+            android:id="@+id/progress_bar_update_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone" />
 
     </RelativeLayout>
 
